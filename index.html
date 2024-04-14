@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tax Calculator</h1>
+<div class="main">
+    <div class="income">
+    <label for="income">Enter your income:</label><br>
+    <input type="number" id="income" placeholder="Enter your income" required>
+    <img src="error.jpg" class="error-icon" id="income-error" alt="Error" title="Please enter a valid income">
+  </div>
+  <div class="extraIncome">
+    <label for="extra-income">Enter extra income:</label><br>
+    <input type="number" id="extra-income" placeholder="Enter extra income" required>
+    <img src="error.jpg" class="error-icon" id="extra-income-error" alt="Error" title="Please enter a valid extra income">
+</div>
+
+<div class="age">
+    <label for="age">Select your age: </label><br>
+    <select id="age" required>
+      <option value="<40">&lt; 40</option>
+      <option value=">=40&<60">&ge; 40 &amp; &lt; 60</option>
+      <option value=">=60">&ge; 60</option>
+    </select>
+    <img src="error.jpg" class="error-icon" id="age-error" alt="Error" title="Please select your age group">
+  </div>
+    <div class="deduction">
+    <label for="deductions">Enter deductions:</label><br>
+    <input type="number" id="deductions" placeholder="Enter deductions" required>
+    <img src="error.jpg" class="error-icon" id="deductions-error" alt="Error" title="Please enter valid deductions">
+    </div>
+  
+    <button onclick="calculateTax()" class="btn">Calculate</button>
+  </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="result"></div>
+      <div id="result1"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
