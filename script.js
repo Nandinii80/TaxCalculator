@@ -5,7 +5,7 @@ function calculateTax() {
     var age = document.getElementById('age').value;
     var tax = 0;
   
-    // Check if any input fields are empty
+    // Check input fields are empty
     var inputs = document.querySelectorAll('input[required], select[required]');
     inputs.forEach(function(input) {
       var id = input.id + '-error';
@@ -37,13 +37,7 @@ function calculateTax() {
     result1Div.innerHTML = 'Your overall income is: ₹' + ((income+extraIncome) - tax).toFixed(2)
     modal.style.display = 'block';
   
-    // Close the modal when the user clicks anywhere outside of it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  
+   
     // Close the modal when the user clicks on the close button
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function() {
