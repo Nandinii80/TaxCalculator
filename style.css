@@ -27,23 +27,23 @@
   }
   
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1;
     left: 25%;
     top: 25%;
-    width: 50%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 50%;
+    height: 100%; 
+    overflow: auto;
   }
   
   .modal-content {
     background-color: #3aafa9;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 3px solid black;
     height: 30vh;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;  
     text-align: center;
     font-size: 30px;
   }
